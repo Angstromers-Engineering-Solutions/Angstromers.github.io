@@ -58,3 +58,12 @@ ul {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+.logo-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.logo {
+  max-width: 180px;
+  height: auto;
+}
