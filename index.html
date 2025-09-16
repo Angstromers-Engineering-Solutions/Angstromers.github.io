@@ -47,40 +47,20 @@
 
     <h2>Process Overview</h2>
     <p>The process and the activities are shown in the figure below:</p>
-    <img src="assets/RISC_V_Ecosystem.png" alt="..." class="figure-img" />
+    <img src="assets/RISC_V_Ecosystem.png" alt="RISC-V Ecosystem" class="figure-img" />
 
     <h2>Disclaimer</h2>
     <p>This repository is maintained for the purpose of promoting knowledge transfer, learning, and open exchange of ideas. All content shared herein is sourced from the public domain or open-source materials. Wherever applicable, original authors and sources have been acknowledged. If any attribution has been missed, it is unintentional, and we welcome corrections—please reach out and we will promptly acknowledge the original contributors.</p>
     <p>If you choose to use, share, or circulate the contents of this repository, kindly acknowledge <strong>Angstromers</strong> as the source.</p>
     <p>Thank you for supporting open knowledge.</p>
 
+    <!-- Action Buttons -->
     <a class="btn" href="https://github.com/Angstromers-Engineering-Solutions/RISC_V-Lecture-Series" target="_blank">📚 View Lecture Series on GitHub</a>
     <a class="btn" href="https://github.com/Angstromers-Engineering-Solutions/RISC_V-Lecture-Series/blob/main/RISC-V%20Projects.pdf" target="_blank">🛠️ Student Projects</a>
     <a class="btn" href="https://github.com/Angstromers-Engineering-Solutions/Angstromers.github.io/blob/main/Program_schedule_RISC_V.pdf" target="_blank">🧰 Program Schedule</a>
 
-    <!-- 🎥 New Video Demonstrations Button -->
-    <button class="btn" id="openVideo">🎥 Video Demonstrations</button>
+    <!-- 🎥 New Button to Open Video in New Tab -->
+    <a class="btn" href="https://youtu.be/1vv4gmNxZ4w" target="_blank">🎥 Video Demonstrations</a>
   </div>
-
-  <!-- Modal Popup -->
-  <div id="videoModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <!-- Replace YOUR_VIDEO_ID with a YouTube video ID or use a local video -->
-      <iframe id="videoFrame" width="560" height="315"
-        src="https://youtu.be/1vv4gmNxZ4w"
-        frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div>
-
-  <script>
-    const modal = document.getElementById('videoModal');
-    const btn = document.getElementById('openVideo');
-    const span = document.querySelector('.close');
-
-    btn.onclick = () => modal.style.display = 'block';
-    span.onclick = () => modal.style.display = 'none';
-    window.onclick = e => { if (e.target === modal) modal.style.display = 'none'; }
-  </script>
 </body>
 </html>
