@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +9,7 @@
 </head>
 <body>
   <div class="logo-container">
-  <img src="assets/angstromers_logo.png" alt="Angstromers Logo" class="logo" />
+    <img src="assets/angstromers_logo.png" alt="Angstromers Logo" class="logo" />
   </div>
   <div class="container">
     <h1>Angstromers Engineering Solutions Pvt. Ltd.</h1>
@@ -58,6 +57,30 @@
     <a class="btn" href="https://github.com/Angstromers-Engineering-Solutions/RISC_V-Lecture-Series" target="_blank">📚 View Lecture Series on GitHub</a>
     <a class="btn" href="https://github.com/Angstromers-Engineering-Solutions/RISC_V-Lecture-Series/blob/main/RISC-V%20Projects.pdf" target="_blank">🛠️ Student Projects</a>
     <a class="btn" href="https://github.com/Angstromers-Engineering-Solutions/Angstromers.github.io/blob/main/Program_schedule_RISC_V.pdf" target="_blank">🧰 Program Schedule</a>
+
+    <!-- 🎥 New Video Demonstrations Button -->
+    <button class="btn" id="openVideo">🎥 Video Demonstrations</button>
   </div>
+
+  <!-- Modal Popup -->
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <!-- Replace YOUR_VIDEO_ID with a YouTube video ID or use a local video -->
+      <iframe id="videoFrame" width="560" height="315"
+        src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+        frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script>
+    const modal = document.getElementById('videoModal');
+    const btn = document.getElementById('openVideo');
+    const span = document.querySelector('.close');
+
+    btn.onclick = () => modal.style.display = 'block';
+    span.onclick = () => modal.style.display = 'none';
+    window.onclick = e => { if (e.target === modal) modal.style.display = 'none'; }
+  </script>
 </body>
 </html>
